@@ -69,37 +69,5 @@
 &trans    &trans     &trans     &trans              &kp K_MUTE            &trans       &trans &trans &trans        &kp KP_ENTER         &kp KP_DOT  &kp KP_N0  &trans     &trans
             >;
         };
-
-        mouse_layer {
-// --------------------------------------------------------------------------------------------------------------------------------
-// | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |                   ---                | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
-// | TRANS |  TRANS |  MS_U |TRANS |MS_WH_U| TRANS | TRANS |           ---                | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
-// | TRANS |  MS_L  |  MS_D |  MS_R |MS_WH_D| TRANS | TRANS |           ---                | TRANS | LEFT  |  UP   | DOWN  | RIGHT | TRANS | TRANS |
-// | TRANS |  TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | --- |TRANS |TRANS|TRANS|TRANS| TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
-// | TRANS |  TRANS | TRANS | TRANS |    MS_BTN1    |MS_BTN2| TRANS | --- |TRANS |TRANS|     TRANS     | TRANS | TRANS | TRANS | TRANS |
-            bindings = <
-&trans    &trans       &trans       &trans       &trans         &trans       &trans                               &trans     &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans       &mkp MCLK    &trans       &mwh SCROLL_UP &trans       &trans                               &trans     &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mwh SCROLL_DOWN &trans &trans                           &trans     &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT  &trans     &trans
-&trans    &trans       &trans       &trans       &trans         &trans       &trans     &trans &trans &trans &trans &trans &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans       &trans       &trans            &mkp LCLK              &mkp RCLK  &trans &trans &trans        &trans           &trans     &trans     &trans     &trans
-            >;
-        };
-
-        adjust_layer {
-// --------------------------------------------------------------------------------------------------------------------------------
-// | TRANS |  F1   |  F2   |  F3   |  F4  |  F5  | TRANS |                   ---                | TRANS |  F6   |  F7   |  F8   |  F9   | F10 | TRANS |
-// | TRANS | RESET | TRANS | TRANS | TRANS| TRANS| TRANS |           ---                | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
-// | TRANS | TRANS | TRANS | TRANS | TRANS| TRANS| TRANS |           ---                | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
-// | TRANS | TRANS | TRANS | TRANS | TRANS| TRANS| TRANS | TRANS | --- |TRANS |TRANS|TRANS|TRANS| TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |
-// | TRANS | TRANS | TRANS | TRANS |     TRANS    | TRANS | TRANS | --- |TRANS |TRANS|     TRANS     | TRANS | TRANS | TRANS | TRANS |
-            bindings = <
-&trans    &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &trans                                &trans     &kp F6     &kp F7     &kp F8     &kp F9     &kp F10    &trans
-&trans    &sys_reset &trans     &trans     &trans     &trans     &trans                                &trans     &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans     &trans     &trans     &trans     &trans                                &trans     &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans     &trans     &trans     &trans     &trans     &trans &trans &trans &trans &trans &trans     &trans     &trans     &trans     &trans     &trans
-&trans    &trans     &trans     &trans          &trans           &trans     &trans &trans &trans        &trans           &trans     &trans     &trans     &trans
-            >;
-        };
     };
 };
